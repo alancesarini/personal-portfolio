@@ -1,5 +1,6 @@
 .Project {
-	max-width: 300px
+	max-width: 100%;
+	margin-bottom: 20px;
 }
 
 .Tag {

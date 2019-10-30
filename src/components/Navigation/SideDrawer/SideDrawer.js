@@ -6,7 +6,8 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import MailIcon from "@material-ui/icons/Mail";
+import AccountBox from "@material-ui/icons/AccountBox";
+import AccountTree from "@material-ui/icons/AccountTree";
 import Divider from "@material-ui/core/Divider";
 import { Link } from "react-router-dom";
 
@@ -14,12 +15,13 @@ import classes from "./SideDrawer.module.css";
 
 const SideDrawer = props => {
   return (
-    <Drawer
-      variant="persistent"
-      anchor="left"
-      open={props.visible}
-      className={classes.Drawer}
-    >
+    // <Drawer
+    //   variant="persistent"
+    //   anchor="left"
+    //   open={props.visible}
+    //   className={classes.Drawer}
+    // >
+    <Drawer anchor="left" open={props.visible} className={classes.Drawer}>
       <div className={classes.drawerHeader}>
         <IconButton onClick={props.onToggleDrawer}>
           <ChevronLeftIcon />
@@ -30,9 +32,17 @@ const SideDrawer = props => {
         <Link to="/bio">
           <ListItem button>
             <ListItemIcon>
-              <MailIcon />
+              <AccountBox />
             </ListItemIcon>
-            <ListItemText primary="BIO" />
+            <ListItemText primary="About me" />
+          </ListItem>
+        </Link>
+        <Link to="/projects">
+          <ListItem button>
+            <ListItemIcon>
+              <AccountTree />
+            </ListItemIcon>
+            <ListItemText primary="My projects" />
           </ListItem>
         </Link>
       </List>

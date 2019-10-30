@@ -12,9 +12,9 @@ import projects from "../../data/projects";
 
 const Projects = () => {
   return (
-    <Grid container>
+    <Grid container spacing={2}>
       {projects.map(project => (
-        <Grid item xs={12} sm={6} md={6} lg={3}>
+        <Grid item xs={12} sm={6} md={6} lg={3} key={project.name}>
           <Card className={classes.Project}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
@@ -29,7 +29,12 @@ const Projects = () => {
                 {project.description}
               </Typography>
               {project.tags.map(tag => (
-                <Chip className={classes.Tag} size="small" label={tag} />
+                <Chip
+                  className={classes.Tag}
+                  size="small"
+                  label={tag}
+                  key={tag}
+                />
               ))}
             </CardContent>
             <CardActions>

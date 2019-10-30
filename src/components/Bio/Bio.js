@@ -34,6 +34,7 @@ const Bio = () => {
                 color="textSecondary"
                 component="p"
                 paragraph
+                key={paragraph}
               >
                 {paragraph}
               </Typography>

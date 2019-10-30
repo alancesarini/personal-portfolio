@@ -25,9 +25,7 @@ function App() {
           visible={drawerVisibility}
         />
 
-        <div
-          className={drawerVisibility ? classes.ContentShift : classes.Content}
-        >
+        <div className={classes.Content}>
           <Switch>
             <Route path="/" exact component={Bio} />
             <Route path="/bio" exact component={Bio} />
