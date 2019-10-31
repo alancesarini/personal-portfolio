@@ -1,22 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import TopBar from "./TopBar/TopBar";
 import SideDrawer from "./SideDrawer/SideDrawer";
+import { toggleDrawer } from "../../store/actions";
 
 const Navigation = props => {
-  const [drawerVisibility, setDrawerVisibility] = useState(false);
-
-  const toggleDrawerHandler = () => {
-    setDrawerVisibility(!drawerVisibility);
-  };
+  const drawerVisibility = useSelector(state => state.drawerVisibility);
+  const dispatch = useDispatch();
 
   return (
     <div>
-      <TopBar
-        onToggleDrawer={toggleDrawerHandler}
-        openDrawer={drawerVisibility}
-      />
+      <TopBar onToggleDrawer={() => dispatch(toggleDrawer())} />
       <SideDrawer
-        onToggleDrawer={toggleDrawerHandler}
+        onToggleDrawer={() => dispatch(toggleDrawer())}
         visible={drawerVisibility}
       />
     </div>
