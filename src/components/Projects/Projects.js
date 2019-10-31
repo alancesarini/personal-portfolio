@@ -10,6 +10,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import classes from "./Projects.module.css";
 import projects from "../../data/projects";
 import Page from "../../hoc/Page";
+import { colors } from "../../constants/colors";
 
 const Projects = () => {
   return (
@@ -42,10 +43,11 @@ const Projects = () => {
               <CardActions>
                 <Button
                   variant="contained"
-                  color="#fafafa"
+                  color="primary"
                   size="small"
                   startIcon={<GitHubIcon />}
                   href={project.link}
+                  style={{ backgroundColor: colors.primary }}
                 >
                   VIEW ON GITHUB
                 </Button>
