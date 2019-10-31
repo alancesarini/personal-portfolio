@@ -10,7 +10,7 @@ import Chip from "@material-ui/core/Chip";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import classes from "./Projects.module.css";
 import projects from "../../data/projects";
-import Page from "../../hoc/Page";
+import Page from "../hoc/Page";
 import { colors } from "../../constants/colors";
 
 const Projects = () => {
