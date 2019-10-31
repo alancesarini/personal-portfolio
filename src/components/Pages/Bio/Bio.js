@@ -6,9 +6,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import classes from "./Bio.module.css";
-import data from "../../data/bio";
+import data from "../../../data/bio";
 import Grid from "@material-ui/core/Grid";
-import Page from "../hoc/Page";
+import Page from "../../hoc/Page";
 
 const Bio = props => {
   return (

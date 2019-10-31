@@ -9,9 +9,9 @@ import Grid from "@material-ui/core/Grid";
 import Chip from "@material-ui/core/Chip";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import classes from "./Projects.module.css";
-import projects from "../../data/projects";
-import Page from "../hoc/Page";
-import { colors } from "../../constants/colors";
+import projects from "../../../data/projects";
+import Page from "../../hoc/Page";
+import { colors } from "../../../constants/colors";
 
 const Projects = () => {
   const tags = [];

@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
-import Bio from "./components/Bio/Bio";
-import Projects from "./components/Projects/Projects";
+import Bio from "./components/Pages/Bio/Bio";
+import Projects from "./components/Pages/Projects/Projects";
 import classes from "./App.module.css";
 
 function App() {
