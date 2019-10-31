@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -9,7 +9,10 @@ import classes from "./Bio.module.css";
 import data from "../../data/bio";
 import Grid from "@material-ui/core/Grid";
 
-const Bio = () => {
+const Bio = props => {
+  useEffect(() => {
+    console.log("loaded BIO!");
+  });
   return (
     <Grid container>
       <Grid item xs={12}>

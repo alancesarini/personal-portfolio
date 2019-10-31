@@ -15,12 +15,6 @@ import classes from "./SideDrawer.module.css";
 
 const SideDrawer = props => {
   return (
-    // <Drawer
-    //   variant="persistent"
-    //   anchor="left"
-    //   open={props.visible}
-    //   className={classes.Drawer}
-    // >
     <Drawer anchor="left" open={props.visible} className={classes.Drawer}>
       <div className={classes.drawerHeader}>
         <IconButton onClick={props.onToggleDrawer}>

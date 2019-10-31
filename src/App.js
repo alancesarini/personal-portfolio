@@ -1,29 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import TopBar from "./components/Navigation/TopBar/TopBar";
-import SideDrawer from "./components/Navigation/SideDrawer/SideDrawer";
+import Navigation from "./components/Navigation/Navigation";
 import Bio from "./components/Bio/Bio";
 import Projects from "./components/Projects/Projects";
 import classes from "./App.module.css";
 
 function App() {
-  const [drawerVisibility, setDrawerVisibility] = useState(false);
-
-  const toggleDrawerHandler = () => {
-    setDrawerVisibility(!drawerVisibility);
-  };
-
   return (
     <div>
       <Router>
-        <TopBar
-          onToggleDrawer={toggleDrawerHandler}
-          openDrawer={drawerVisibility}
-        />
-        <SideDrawer
-          onToggleDrawer={toggleDrawerHandler}
-          visible={drawerVisibility}
-        />
+        <Navigation />
 
         <div className={classes.Content}>
           <Switch>
