@@ -12,6 +12,7 @@ import classes from "./Projects.module.css";
 import projects from "../../../data/projects";
 import Page from "../../hoc/Page";
 import { colors } from "../../../constants/colors";
+import PageTitle from "../../UI/PageTitle/PageTitle";
 
 const Projects = () => {
   const tags = [];
@@ -34,7 +35,13 @@ const Projects = () => {
 
   return (
     <Page>
-      <Grid container spacing={2} className={classes.FilterContainer}>
+      <PageTitle title="My projects" />
+      <Grid
+        container
+        spacing={2}
+        className={classes.FilterContainer}
+        justify="center"
+      >
         <Grid item xs={12} lg={9}>
           <Paper className={classes.Filter}>
             {tags.map(tag => (
@@ -49,7 +56,7 @@ const Projects = () => {
           </Paper>
         </Grid>
       </Grid>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} justify="center">
         {filteredProjects.map(project => (
           <Grid item xs={12} sm={6} md={6} lg={3} key={project.name}>
             <Card className={classes.Project}>

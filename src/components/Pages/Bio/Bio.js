@@ -9,12 +9,14 @@ import classes from "./Bio.module.css";
 import data from "../../../data/bio";
 import Grid from "@material-ui/core/Grid";
 import Page from "../../hoc/Page";
+import PageTitle from "../../UI/PageTitle/PageTitle";
 
 const Bio = props => {
   return (
     <Page>
-      <Grid container>
-        <Grid item xs={12}>
+      <PageTitle title="Bio" />
+      <Grid container justify="center">
+        <Grid item lg={4} xs={12}>
           <Card className={classes.Bio}>
             <CardMedia
               component="img"
