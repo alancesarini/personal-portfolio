@@ -1,2 +1,12 @@
 .Bio {
 }
+
+.AvatarContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.Avatar {
+	width: 75px !important;
+	height: 75px !important;
+}
