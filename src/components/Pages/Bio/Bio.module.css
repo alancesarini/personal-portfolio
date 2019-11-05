@@ -10,3 +10,7 @@
 	width: 75px !important;
 	height: 75px !important;
 }
+
+.Actions {
+	justify-content: center;
+}

@@ -10,6 +10,9 @@ import data from "../../../data/bio";
 import Grid from "@material-ui/core/Grid";
 import Page from "../../hoc/Page";
 import PageTitle from "../../UI/PageTitle/PageTitle";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedIn from "@material-ui/icons/LinkedIn";
+import { colors } from "../../../constants/colors";
 
 const Bio = props => {
   return (
@@ -30,10 +33,10 @@ const Bio = props => {
                   </div>
                 </Grid>
                 <Grid item lg={10} xs={12}>
-                  <Typography gutterBottom variant="h3" component="h2">
+                  <Typography gutterBottom variant="h4" component="h2">
                     {data.text.title}
                   </Typography>
-                  <Typography gutterBottom variant="h5" component="h3">
+                  <Typography gutterBottom variant="h6" component="h3">
                     {data.text.subtitle}
                   </Typography>
                   {data.text.content.map(paragraph => (
@@ -50,12 +53,26 @@ const Bio = props => {
                 </Grid>
               </Grid>
             </CardContent>
-            <CardActions>
-              <Button size="small" color="primary">
-                Share
+            <CardActions className={classes.Actions}>
+              <Button
+                variant="contained"
+                color="primary"
+                size="small"
+                startIcon={<GitHubIcon />}
+                href={data.social.github}
+                style={{ backgroundColor: colors.primary }}
+              >
+                FOLLOW ME ON GITHUB
               </Button>
-              <Button size="small" color="primary">
-                Learn More
+              <Button
+                variant="contained"
+                color="primary"
+                size="small"
+                startIcon={<LinkedIn />}
+                href={data.social.linkedin}
+                style={{ backgroundColor: colors.primary }}
+              >
+                CONTACT ME ON LINKEDIN
               </Button>
             </CardActions>
           </Card>
