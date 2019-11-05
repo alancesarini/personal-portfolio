@@ -54,26 +54,35 @@ const Bio = props => {
               </Grid>
             </CardContent>
             <CardActions className={classes.Actions}>
-              <Button
-                variant="contained"
-                color="primary"
-                size="small"
-                startIcon={<GitHubIcon />}
-                href={data.social.github}
-                style={{ backgroundColor: colors.primary }}
-              >
-                FOLLOW ME ON GITHUB
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                size="small"
-                startIcon={<LinkedIn />}
-                href={data.social.linkedin}
-                style={{ backgroundColor: colors.primary }}
-              >
-                CONTACT ME ON LINKEDIN
-              </Button>
+              <Grid container spacing={2}>
+                <Grid item lg={2} xs={false}></Grid>
+                <Grid item lg={5} xs={12}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    startIcon={<GitHubIcon />}
+                    href={data.social.github}
+                    style={{ backgroundColor: colors.primary }}
+                    className={classes.SocialButton}
+                  >
+                    FOLLOW ME ON GITHUB
+                  </Button>
+                </Grid>
+                <Grid item lg={5} xs={12}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    startIcon={<LinkedIn />}
+                    href={data.social.linkedin}
+                    style={{ backgroundColor: colors.primary }}
+                    className={classes.SocialButton}
+                  >
+                    CONTACT ME ON LINKEDIN
+                  </Button>
+                </Grid>
+              </Grid>
             </CardActions>
           </Card>
         </Grid>

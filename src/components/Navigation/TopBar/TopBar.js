@@ -19,7 +19,7 @@ const TopBar = props => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap>
-          Persistent drawer
+          Alan Cesarini - Full Stack Developer
         </Typography>
       </Toolbar>
     </AppBar>
