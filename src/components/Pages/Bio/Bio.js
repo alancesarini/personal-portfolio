@@ -12,6 +12,8 @@ import Page from "../../hoc/Page";
 import PageTitle from "../../UI/PageTitle/PageTitle";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
+import ArrowForward from "@material-ui/icons/ArrowForward";
+import Link from "@material-ui/icons/Link";
 import { colors } from "../../../constants/colors";
 import Chip from "@material-ui/core/Chip";
 
@@ -113,9 +115,20 @@ const Bio = props => {
               </Typography>
             </div>
             <CardContent>
-              {data.courses.map(course => (
-                <p>{course.name}</p>
-              ))}
+              <ul className={classes.CourseList}>
+                {data.courses.map(course => (
+                  <li key={course.name} className={classes.CourseListItem}>
+                    <ArrowForward
+                      className={classes.ArrowBullet}
+                      fontSize="inherit"
+                    />{" "}
+                    {course.name}
+                    <a href={course.link}>
+                      <Link className={classes.LinkIcon} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </CardContent>
           </Card>
         </Grid>

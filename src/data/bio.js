@@ -24,26 +24,22 @@ const bio = {
   ],
   courses: [
     {
-      name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
-      link: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
-      icon: "faNode"
+      name: "React - The Complete Guide",
+      link: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
     },
     {
       name: "The Complete Node.js Developer Course",
       link:
-        "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/",
-      icon: "faNode"
+        "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/"
     },
     {
       name: "React Native - The Practical Guide",
-      link: "https://www.udemy.com/course/react-native-the-practical-guide/",
-      icon: "faNode"
+      link: "https://www.udemy.com/course/react-native-the-practical-guide/"
     },
     {
-      name: "JavaScript - The Complete Guide 2020 (Beginner + Advanced)",
+      name: "JavaScript - The Complete Guide 2020",
       link:
-        "https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/",
-      icon: "faNode"
+        "https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/"
     }
   ]
 };
