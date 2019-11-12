@@ -17,10 +17,14 @@ const bio = {
     "ReactJS",
     "NodeJS",
     "MongoDB",
+    "Javascript",
     "jQuery",
     "Wordpress",
     "PHP",
-    "MySQL"
+    "MySQL",
+    "HTML5",
+    "CSS3",
+    "Git"
   ],
   courses: [
     {
