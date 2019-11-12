@@ -16,6 +16,7 @@ import ArrowForward from "@material-ui/icons/ArrowForward";
 import Link from "@material-ui/icons/Link";
 import { colors } from "../../../constants/colors";
 import Chip from "@material-ui/core/Chip";
+import parse from "html-react-parser";
 
 const Bio = props => {
   return (
@@ -55,7 +56,7 @@ const Bio = props => {
                       paragraph
                       key={paragraph}
                     >
-                      {paragraph}
+                      {parse(paragraph)}
                     </Typography>
                   ))}
                 </Grid>
