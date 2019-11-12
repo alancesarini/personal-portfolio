@@ -59,6 +59,14 @@ const Bio = props => {
                       {parse(paragraph)}
                     </Typography>
                   ))}
+                  <Typography
+                    variant="body1"
+                    color="textSecondary"
+                    component="p"
+                    paragraph
+                  >
+                    Check out <a href="/projects">some of my code</a>.
+                  </Typography>
                 </Grid>
               </Grid>
             </CardContent>
