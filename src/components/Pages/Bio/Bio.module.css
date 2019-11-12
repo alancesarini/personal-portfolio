@@ -1,4 +1,5 @@
 .Bio {
+	margin-bottom: 20px;
 }
 
 .AvatarContainer {
@@ -17,4 +18,14 @@
 
 .SocialButton {
 	width: 100%;
+}
+
+.Skill {
+	margin: 5px;
+}
+
+.CardHeader {
+	width: 100%;
+	border-bottom: 1px solid #cfcfcf;
+	padding: 5px 10px;
 }

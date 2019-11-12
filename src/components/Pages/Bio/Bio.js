@@ -13,14 +13,20 @@ import PageTitle from "../../UI/PageTitle/PageTitle";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import { colors } from "../../../constants/colors";
+import Chip from "@material-ui/core/Chip";
 
 const Bio = props => {
   return (
     <Page>
-      <PageTitle title="Bio" />
-      <Grid container justify="center">
-        <Grid item lg={6} xs={12}>
+      <PageTitle title="About me" />
+      <Grid container justify="center" spacing={2}>
+        <Grid item lg={6} md={6} xs={12}>
           <Card className={classes.Bio}>
+            <div className={classes.CardHeader}>
+              <Typography variant="h6" component="h5">
+                Bio
+              </Typography>
+            </div>
             <CardContent>
               <Grid container justify="center">
                 <Grid item lg={2} xs={12}>
@@ -84,6 +90,33 @@ const Bio = props => {
                 </Grid>
               </Grid>
             </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item lg={3} md={6} xs={12}>
+          <Card className={classes.Bio}>
+            <div className={classes.CardHeader}>
+              <Typography variant="h6" component="h5">
+                Skills
+              </Typography>
+            </div>
+            <CardContent>
+              {data.skills.map(skill => (
+                <Chip label={skill} key={skill} className={classes.Skill} />
+              ))}
+            </CardContent>
+          </Card>
+          <Card className={classes.Bio}>
+            <div className={classes.CardHeader}>
+              <Typography variant="h6" component="h5">
+                Latest courses taken
+              </Typography>
+            </div>
+            <CardContent>
+              {data.courses.map(course => (
+                <p>{course.name}</p>
+              ))}
+            </CardContent>
           </Card>
         </Grid>
       </Grid>
