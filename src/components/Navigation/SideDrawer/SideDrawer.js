@@ -23,20 +23,20 @@ const SideDrawer = props => {
       </div>
       <Divider />
       <List className={classes.SideMenu}>
-        <Link to="/bio">
+        <Link to="/bio" className={classes.Link}>
           <ListItem button>
             <ListItemIcon>
               <AccountBox />
             </ListItemIcon>
-            <ListItemText primary="About me" />
+            <ListItemText primary="About me" className={classes.LinkText} />
           </ListItem>
         </Link>
-        <Link to="/projects">
+        <Link to="/projects" className={classes.Link}>
           <ListItem button>
             <ListItemIcon>
               <AccountTree />
             </ListItemIcon>
-            <ListItemText primary="My projects" />
+            <ListItemText primary="My projects" className={classes.LinkText} />
           </ListItem>
         </Link>
       </List>

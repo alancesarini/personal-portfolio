@@ -1,7 +1,15 @@
 .Drawer {
-	width: 240px
+  width: 240px;
 }
 
 .SideMenu {
-	width: 240px;
+  width: 240px;
+}
+
+.LinkText {
+  color: #3c99f0;
+}
+
+.Link {
+  text-decoration: none;
 }
