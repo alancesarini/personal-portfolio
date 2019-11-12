@@ -81,7 +81,7 @@ const Projects = () => {
                   />
                 ))}
               </CardContent>
-              <CardActions>
+              <CardActions className={classes.ProjectActions}>
                 <Button
                   variant="contained"
                   color="primary"

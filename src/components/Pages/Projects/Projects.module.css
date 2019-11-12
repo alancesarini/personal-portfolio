@@ -1,22 +1,31 @@
 .Project {
-	max-width: 100%;
-	margin-bottom: 15px;
+  max-width: 100%;
+  margin-bottom: 15px;
+  min-height: 230px;
+  position: relative;
 }
 
 .Tag {
-	margin-right: 5px;
-	margin-bottom: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .Tag:focus {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .FilterContainer {
-	margin-bottom: 20px !important;
-	text-align: center;
+  margin-bottom: 20px !important;
+  text-align: center;
 }
 
 .Filter {
-	padding: 20px 20px 15px 20px;
+  padding: 20px 20px 15px 20px;
+}
+
+.ProjectActions {
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
