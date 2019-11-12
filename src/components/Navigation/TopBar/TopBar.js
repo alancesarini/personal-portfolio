@@ -9,7 +9,7 @@ import classes from "./TopBar.module.css";
 const TopBar = props => {
   return (
     <AppBar position="fixed" className={classes.TopBar}>
-      <Toolbar>
+      <Toolbar className={classes.ToolBar}>
         <IconButton
           color="inherit"
           aria-label="open drawer"
