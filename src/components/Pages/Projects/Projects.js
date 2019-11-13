@@ -88,7 +88,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<GitHubIcon />}
                   href={project.link}
-                  style={{ backgroundColor: colors.primary }}
+                  style={{ backgroundColor: colors.light }}
                 >
                   VIEW ON GITHUB
                 </Button>

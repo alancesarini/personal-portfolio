@@ -5,10 +5,15 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
 import classes from "./TopBar.module.css";
+import { colors } from "../../../constants/colors";
 
 const TopBar = props => {
   return (
-    <AppBar position="fixed" className={classes.TopBar}>
+    <AppBar
+      position="fixed"
+      className={classes.TopBar}
+      style={{ backgroundColor: colors.dark }}
+    >
       <Toolbar className={classes.ToolBar}>
         <IconButton
           color="inherit"

@@ -80,7 +80,7 @@ const Bio = props => {
                     size="small"
                     startIcon={<GitHubIcon />}
                     href={data.social.github}
-                    style={{ backgroundColor: colors.primary }}
+                    style={{ backgroundColor: colors.light }}
                     className={classes.SocialButton}
                   >
                     FOLLOW ME ON GITHUB
@@ -93,7 +93,7 @@ const Bio = props => {
                     size="small"
                     startIcon={<LinkedIn />}
                     href={data.social.linkedin}
-                    style={{ backgroundColor: colors.primary }}
+                    style={{ backgroundColor: colors.light }}
                     className={classes.SocialButton}
                   >
                     CONTACT ME ON LINKEDIN
