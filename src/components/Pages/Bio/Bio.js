@@ -14,6 +14,9 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import ArrowForward from "@material-ui/icons/ArrowForward";
 import LinkIcon from "@material-ui/icons/Link";
+import AccountBox from "@material-ui/icons/AccountBox";
+import CheckBox from "@material-ui/icons/CheckBox";
+import Stars from "@material-ui/icons/Stars";
 import Chip from "@material-ui/core/Chip";
 import parse from "html-react-parser";
 import Link from "@material-ui/core/Link";
@@ -31,7 +34,12 @@ const Bio = props => {
         <Grid item lg={6} md={6} xs={12}>
           <Card className={classes.Bio}>
             <div className={classes.CardHeader}>
-              <Typography variant="h6" component="h5">
+              <AccountBox className={classes.CardHeaderIcon} color="primary" />
+              <Typography
+                variant="h6"
+                component="h5"
+                className={classes.CardHeaderText}
+              >
                 Bio
               </Typography>
             </div>
@@ -114,7 +122,12 @@ const Bio = props => {
         <Grid item lg={3} md={6} xs={12}>
           <Card className={classes.Bio}>
             <div className={classes.CardHeader}>
-              <Typography variant="h6" component="h5">
+              <CheckBox className={classes.CardHeaderIcon} color="primary" />
+              <Typography
+                variant="h6"
+                component="h5"
+                className={classes.CardHeaderText}
+              >
                 Skills
               </Typography>
             </div>
@@ -126,7 +139,12 @@ const Bio = props => {
           </Card>
           <Card className={classes.Bio}>
             <div className={classes.CardHeader}>
-              <Typography variant="h6" component="h5">
+              <Stars className={classes.CardHeaderIcon} color="primary" />
+              <Typography
+                variant="h6"
+                component="h5"
+                className={classes.CardHeaderText}
+              >
                 Latest courses taken
               </Typography>
             </div>

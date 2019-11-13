@@ -53,3 +53,14 @@
   vertical-align: middle;
   padding-left: 5px;
 }
+
+.CardHeaderIcon {
+  display: inline !important;
+  vertical-align: middle;
+}
+
+.CardHeaderText {
+  display: inline !important;
+  padding-left: 5px;
+  vertical-align: middle;
+}
