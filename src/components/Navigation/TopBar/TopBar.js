@@ -9,11 +9,7 @@ import { colors } from "../../../constants/colors";
 
 const TopBar = props => {
   return (
-    <AppBar
-      position="fixed"
-      className={classes.TopBar}
-      style={{ backgroundColor: colors.dark }}
-    >
+    <AppBar position="fixed" style={{ backgroundColor: colors.dark }}>
       <div className={classes.Logo}>
         <img
           src="/assets/images/logo-alancesarini.png"
