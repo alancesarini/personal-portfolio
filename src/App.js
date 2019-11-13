@@ -27,6 +27,14 @@ const theme = createMuiTheme({
     h6: {
       fontFamily: "Chivo, sans-serif"
     }
+  },
+  palette: {
+    primary: {
+      main: "#3c99f0"
+    },
+    secondary: {
+      main: "#084a83"
+    }
   }
 });
 

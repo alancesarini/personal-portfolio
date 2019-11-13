@@ -11,7 +11,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import classes from "./Projects.module.css";
 import projects from "../../../data/projects";
 import Page from "../../hoc/Page";
-import { colors } from "../../../constants/colors";
 import PageTitle from "../../UI/PageTitle/PageTitle";
 
 const Projects = () => {
@@ -88,7 +87,6 @@ const Projects = () => {
                   size="small"
                   startIcon={<GitHubIcon />}
                   href={project.link}
-                  style={{ backgroundColor: colors.light }}
                 >
                   VIEW ON GITHUB
                 </Button>

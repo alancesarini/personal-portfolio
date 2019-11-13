@@ -13,12 +13,17 @@ import PageTitle from "../../UI/PageTitle/PageTitle";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import ArrowForward from "@material-ui/icons/ArrowForward";
-import Link from "@material-ui/icons/Link";
-import { colors } from "../../../constants/colors";
+import LinkIcon from "@material-ui/icons/Link";
 import Chip from "@material-ui/core/Chip";
 import parse from "html-react-parser";
+import Link from "@material-ui/core/Link";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const Bio = props => {
+  const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
     <Page>
       <PageTitle title="About me" />
@@ -37,7 +42,7 @@ const Bio = props => {
                     <Avatar
                       alt="Alan Cesarini"
                       src={data.image.src}
-                      className={classes.Avatar}
+                      className={isSmall ? classes.SmallAvatar : classes.Avatar}
                     />
                   </div>
                 </Grid>
@@ -65,7 +70,11 @@ const Bio = props => {
                     component="p"
                     paragraph
                   >
-                    Check out <a href="/projects">some of my code</a>.
+                    Check out{" "}
+                    <Link href="/projects">
+                      <strong>some of my code</strong>
+                    </Link>
+                    .
                   </Typography>
                 </Grid>
               </Grid>
@@ -80,7 +89,6 @@ const Bio = props => {
                     size="small"
                     startIcon={<GitHubIcon />}
                     href={data.social.github}
-                    style={{ backgroundColor: colors.light }}
                     className={classes.SocialButton}
                   >
                     FOLLOW ME ON GITHUB
@@ -93,7 +101,6 @@ const Bio = props => {
                     size="small"
                     startIcon={<LinkedIn />}
                     href={data.social.linkedin}
-                    style={{ backgroundColor: colors.light }}
                     className={classes.SocialButton}
                   >
                     CONTACT ME ON LINKEDIN
@@ -133,7 +140,7 @@ const Bio = props => {
                     />{" "}
                     {course.name}
                     <a href={course.link}>
-                      <Link className={classes.LinkIcon} />
+                      <LinkIcon color="primary" className={classes.LinkIcon} />
                     </a>
                   </li>
                 ))}
