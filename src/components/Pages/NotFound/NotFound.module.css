@@ -1,0 +1,16 @@
+.NotFound {
+  height: 50vh;
+}
+
+.Icon {
+  font-size: 330px !important;
+}
+
+.Text {
+  width: 100%;
+  text-align: center;
+}
+
+.Content {
+  text-align: center;
+}

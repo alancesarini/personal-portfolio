@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import Bio from "./components/Pages/Bio/Bio";
 import Projects from "./components/Pages/Projects/Projects";
+import NotFound from "./components/Pages/NotFound/NotFound";
 import classes from "./App.module.css";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
@@ -49,7 +50,7 @@ function App() {
             <Route path="/" exact component={Bio} />
             <Route path="/bio" exact component={Bio} />
             <Route path="/projects" exact component={Projects} />
-            <Route component={() => <div>NOT FOUND!!!</div>} />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </Router>
