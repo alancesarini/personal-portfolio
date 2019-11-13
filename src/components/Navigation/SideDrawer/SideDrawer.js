@@ -15,7 +15,7 @@ import classes from "./SideDrawer.module.css";
 
 const SideDrawer = props => {
   return (
-    <Drawer anchor="left" open={props.visible} className={classes.Drawer}>
+    <Drawer anchor="right" open={props.visible} className={classes.Drawer}>
       <div className={classes.drawerHeader}>
         <IconButton onClick={props.onToggleDrawer}>
           <ChevronLeftIcon />

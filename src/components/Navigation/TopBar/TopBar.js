@@ -14,18 +14,25 @@ const TopBar = props => {
       className={classes.TopBar}
       style={{ backgroundColor: colors.dark }}
     >
+      <div className={classes.Logo}>
+        <img
+          src="/assets/images/logo-alancesarini.png"
+          alt="Alan Cesarini - Full stack developer"
+        />
+      </div>
       <Toolbar className={classes.ToolBar}>
+        <Typography variant="h6" noWrap className={classes.Title}>
+          Alan Cesarini - Full Stack Developer
+        </Typography>
         <IconButton
           color="inherit"
           aria-label="open drawer"
           onClick={props.onToggleDrawer}
           edge="start"
+          className={classes.MenuIcon}
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap>
-          Alan Cesarini - Full Stack Developer
-        </Typography>
       </Toolbar>
     </AppBar>
   );
