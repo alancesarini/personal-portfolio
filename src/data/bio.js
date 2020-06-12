@@ -53,6 +53,11 @@ const bio = {
       name: 'The React Bootcamp',
       link:
         'https://scrimba.com/g/greact'
+    },
+    {
+      name: 'The MERN Fullstack Guide 2020',
+      link:
+        'https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/'
     }
   ]
 }
